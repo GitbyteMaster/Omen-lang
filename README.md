@@ -4,6 +4,8 @@
 ---
 <b> Because everyone should be given the oppurtunity to program. </b>
 
+![](https://img.shields.io/badge/Ready-No-red)
+
 [Download](https://github.com/GitbyteMaster/Omen-lang/archive/refs/heads/main.zip) | 
 
 <b>~</b>

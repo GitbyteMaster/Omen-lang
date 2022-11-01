@@ -32,3 +32,12 @@ fn main(){
 # Omen
 "hello world!"
 ```
+<b>What will Omen include?</b>
+
+Like most programming languages, Omen will contain basic datatypes.
+```python
+"text"   # Strings
+123      # Integers
+1.23     # Floats
+True     # Boolean
+```

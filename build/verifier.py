@@ -4,25 +4,27 @@ import platform
 
 pathend = ""
 if platform.system() == "Windows":
-  pathend = "/"
+  pathend = "/end/"
 else:
-  pathend = "\\"
-if not os.path.exist(f"/Users/{getpass.getuser()}/Omen-lang/build/exec"):
+  pathend = "\\end\\"
+if not os.path.exists(f"/Users/{getpass.getuser()}/Omen-lang/build/exec"):
   open(f"/Users/{getpass.getuser()}/Omen-lang/build/exec", "a")
-exec = []
-for line in open("/Users/{getpass.getuser()}/Omen-lang/build/exec", "r"):
-  if len(exec) == 1:
-    exec.append(line)
-counter = 1
+exe = []
+for line in open(f"/Users/{getpass.getuser()}/Omen-lang/build/exec", "r"):
+  if not len(exe) == 1:
+    exe.append(line)
+counter = 0
 path = ""
-while not exec[0][counter+1] == pathend:
+while not counter+1 == exe[0].index(pathend):
   counter += 1
-  path = f"{path}{exec[0][counter]}"
+  path = f"{path}{exe[0][counter]}"
 exists = False
-if os.path.exist(path):
-  exist = True
+if os.path.exists(path):
+  exists = True
   
 def verified():
-  return exist
-def path()
+  return exists
+def filepath():
   return path
+
+print(filepath())

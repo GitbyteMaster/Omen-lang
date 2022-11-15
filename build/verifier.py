@@ -26,5 +26,3 @@ def verified():
   return exists
 def filepath():
   return path
-
-print(filepath())

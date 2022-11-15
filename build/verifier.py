@@ -17,7 +17,8 @@ counter = 0
 path = ""
 while not counter+1 == exe[0].index(pathend):
   counter += 1
-  path = f"{path}{exe[0][counter]}"
+  if not exe[0][counter] == "\\":
+    path = f"{path}{exe[0][counter]}"
 exists = False
 if os.path.exists(path):
   exists = True
@@ -26,3 +27,4 @@ def verified():
   return exists
 def filepath():
   return path
+print(exists)

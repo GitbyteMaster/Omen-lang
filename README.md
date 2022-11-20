@@ -28,7 +28,7 @@ fn main(){
   println!("hello world!");
 }
 ```
-```shell
+```java
 # Omen
 "hello world!" ;
 ```

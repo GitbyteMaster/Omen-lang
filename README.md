@@ -30,7 +30,7 @@ fn main(){
 ```
 ```shell
 # Omen
-"hello world!"
+"hello world!" ;
 ```
 <b>What will Omen include?</b>
 

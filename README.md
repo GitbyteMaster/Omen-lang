@@ -6,7 +6,7 @@
 
 ![](https://img.shields.io/badge/Ready-No-red)
 
-[Download](https://github.com/GitbyteMaster/Omen-lang/archive/refs/heads/main.zip) | 
+[Download](https://github.com/GitbyteMaster/Omen-lang/archive/refs/heads/main.zip) | [Docs](https://github.com/GitbyteMaster/Omen-lang/blob/main/Documentation.md)
 
 <b>~</b>
 </div>

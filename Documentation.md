@@ -30,3 +30,5 @@ If you don't put any location to a function, Omen assigns the `*output` location
 # This is 'hello world' now.
 "hello world!" ;
 ```
+All custom-made locations cannot contain symbols or numbers, and are announced by name. This is why it is impossible to assign `*output` in the parameters without creating a new location `output`.
+## String Interpolation

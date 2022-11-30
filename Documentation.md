@@ -32,6 +32,7 @@ If you don't put any location to a function, Omen assigns the `*output` location
 ```
 All custom-made locations cannot contain symbols or numbers, and are announced by name. This is why it is impossible to assign `*output` in the parameters without creating a new location `output`.
 ## String Interpolation
-String interpolation is just a location assigned between two strings.
+String interpolation is just a location assigned between two strings when it comes to just locations.
 ```
 "hello," name
+```

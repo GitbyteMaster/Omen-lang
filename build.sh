@@ -1,9 +1,10 @@
-mkdir /Users/$USER/Omen-lang
-mkdir /Users/$USER/Omen-lang/assets
-mkdir /Users/$USER/Omen-lang/build
-echo > /Users/$USER/Omen-lang/build/exec
-curl -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/verifier.py > /Users/$USER/Omen-lang/build/verifier.py
-curl -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/exbuild/command.sh > /Users/$USER/omen.sh
+mkdir ~/Omen-lang
+mkdir ~/Omen-lang/assets
+mkdir ~/Omen-lang/build
+echo > ~/Omen-lang/build/exec
+curl -s https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/verifier.py > ~/Omen-lang/build/verifier.py
+curl -s https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/exbuild/command.sh > ~/omen.sh
+curl -s https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/run.py > ~/Omen-lang/build/run.py
 
 if ! [ $? -eq 0 ];then
   echo Omen: Failed to install Omen due to error: $?

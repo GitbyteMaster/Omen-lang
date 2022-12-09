@@ -4,7 +4,8 @@ MKDIR C:\Users\%USERNAME%\Omen-lang
 MKDIR C:\Users\%USERNAME%\Omen-lang\assets
 MKDIR C:\Users\%USERNAME%\Omen-lang\build
 ECHO > C:\Users\%USERNAME%\Omen-lang\build\exec
-CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/verifier.py > C:\Users\%USERNAME%\Omen-lang\build\verifier
+CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/run.py > C:\Users\%USERNAME%\Omen-lang\build\run.py
+CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/verifier.py > C:\Users\%USERNAME%\Omen-lang\build\verifier.py
 CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/exbuild/command.bat > C:\Users\%USERNAME%\omen.bat
 
 IF NOT ERRORLEVEL 0 (

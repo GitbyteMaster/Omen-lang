@@ -11,6 +11,6 @@ if ! [ $? -eq 0 ];then
   echo Omen: Failed to install Omen due to error: $?
   echo Omen: Add an issue here: https://github.com/GitbyteMaster/Omen-lang/issues
 fi
-if ! [ -d "~/Omen-lang" ];then
+if ! [ -d ~/Omen-lang ];then
   echo "Omen: Omen wasn't created!"
 fi

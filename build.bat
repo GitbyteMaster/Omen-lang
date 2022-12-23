@@ -8,6 +8,8 @@ CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/run.
 CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/build/verifier.py > C:\Users\%USERNAME%\Omen-lang\build\verifier.py
 CURL -S https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/exbuild/command.bat > C:\Users\%USERNAME%\omen.bat
 
+REM #ENDRETRY
+
 IF NOT ERRORLEVEL 0 (
   ECHO Omen: Failed to install Omen due to error: %ERRORLEVEL%
   ECHO Omen: Add an issue here: https://github.com/GitbyteMaster/Omen-lang/issues

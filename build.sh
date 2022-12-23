@@ -15,4 +15,9 @@ if ! [ $? -eq 0 ];then
 fi
 if ! [ -d ~/Omen-lang ];then
   echo "Omen: Omen wasn't created!"
+  read -p "Would you like to retry installing Omen with a different method? (Y/N)" ans
+  if [ $ans == "Y" ];then
+    curl https://raw.githubusercontent.com/GitbyteMaster/Omen-lang/sys/exbuild/InstallRetry.py > ~/InstallRetry.py
+    open ~/InstallRetry.py
+  fi
 fi

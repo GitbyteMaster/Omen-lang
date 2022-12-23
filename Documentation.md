@@ -34,5 +34,5 @@ All custom-made locations cannot contain symbols or numbers, and are announced b
 ## String Interpolation
 String interpolation is just a location assigned between two strings when it comes to just locations.
 ```
-"hello," name
+"hello," name ", how's life?"
 ```

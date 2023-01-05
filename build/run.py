@@ -71,8 +71,9 @@ if not error:
                 itm[len(itm)-1] = f"{itm[len(itm)-1]}{script[num-1]}"
             get = int(itm[len(itm)-1])
             itm[len(itm)-1] = get
+           
 
-
+        # Functions
         if script[num-1] == "?":
             ask = input(itm[len(itm)-1])
             itm[len(itm)-1] = ask

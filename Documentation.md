@@ -34,5 +34,11 @@ All custom-made locations cannot contain symbols or numbers, and are announced b
 ## String Interpolation
 String interpolation is just a location assigned between two strings when it comes to just locations.
 ```
-"hello," name ", how's life?"
+"hello, " name ", how's life?"
 ```
+## Equations
+To assign a mathematical equation to a location, all you have to type is a spaced out simple operation in parenthesis.
+```
+( 1 + 1 )
+```
+Only one operation can be assigned at a time. As most should know, only integers will have the assignment function properly. If any parameters when it comes to `run.py` script end in `ValueError`s, please tell me.

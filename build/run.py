@@ -23,6 +23,9 @@ if not error:
     script = f"{script} "
     num = 0
     char = ""
+    
+    par = False
+    operation = ""
     while num != len(script)-1:
         num += 1
         char = script[num-1]
@@ -71,9 +74,28 @@ if not error:
                 itm[len(itm)-1] = f"{itm[len(itm)-1]}{script[num-1]}"
             get = int(itm[len(itm)-1])
             itm[len(itm)-1] = get
-           
 
-        # Functions
+        if char == "(":
+            par = True
+            operation = ""
+        if par:
+            if char in "+-*/":
+                operation = char
+        if char == ")":
+            if par:
+                i = 0
+                if operation == "+":
+                    i = itm[len(itm)-2]+itm[len(itm)-1]
+                if operation == "-":
+                    i = itm[len(itm)-2]-itm[len(itm)-1]
+                if operation == "*":
+                    i = itm[len(itm)-2]*itm[len(itm)-1]
+                if operation == "/":
+                    i = itm[len(itm)-2]/itm[len(itm)-1]
+                itm.append(i)
+                itm.remove(itm[len(itm)-2])
+                itm.remove(itm[len(itm)-2])
+
         if script[num-1] == "?":
             ask = input(itm[len(itm)-1])
             itm[len(itm)-1] = ask
